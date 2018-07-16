@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>AngularJS Form Validation</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no"> 
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="libs/angular/angular.min.js"></script>  
+  <script src="libs/app.js"></script>
+</head>
+<body>
+    
+<div>
+  <section class="registrationForm" ng-app="myApp" ng-controller="FormController">
+     <form name="regform" ng-submit="register()" novalidate>
+        <div>
+          <h1>AngularJS Form Validation</h1>
+          <h4>It doesn't takes more than 10 seconds, we have count it !!!</h4>
+          <h3 ng-show="message">{{ message }}</h3>
+        </div>
+    
+        <input type="text" name="username"  ng-required="true"    placeholder="Username"
+               ng-model="user.username">   
+        <p class="error" ng-show="regform.username.$touched && regform.username.$invalid">
+            Username is required !!!</p>
+        
+        <input type="email" name="email"    ng-required="true"    placeholder="Email"
+               ng-model="user.email">
+        <p class="error" ng-show="regform.email.$touched && regform.email.$invalid">
+            Please provide a valid Email !!!</p>
+        
+        <input type="password" name="password" ng-required="true"  placeholder="Password"
+               ng-model="user.password" ng-minlength="8">
+        <p class="error" ng-show="regform.password.$touched && regform.password.$invalid">
+            Password must be atleast 8 characters long !!!</p>
+        
+        <button type="submit" class="btn">Submit</button>      
+     </form>
+  </section>
+</div>
+</body>
+</html>
+
