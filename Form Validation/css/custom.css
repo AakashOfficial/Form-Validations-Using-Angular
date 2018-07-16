@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* Reset Styles */
+
+html, body, div,h1,
+fieldset, form,section
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+
+
+section {
+  display: block; }
+
+
+html {
+  background-color: #F7F7F7;
+  min-height: 100%;
+  height: auto;
+}
+
+body  {  
+  font-size: 1rem;
+  line-height: 160%;
+  color: #555459;
+  line-height: 1.5rem;
+    *zoom: 1;
+}
+
+.registrationForm {
+  background: white;
+  width: 100%;
+  max-width: 850px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 40px;
+  text-align: center;
+  position: relative;
+  opacity: .95;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 1px 0 rgba(0,0,0,.25);
+}
+
+
+h1{ 
+  font-weight: 100;
+  text-shadow: 1px 1px rgb(255,255,255, 1);
+}
+
+a {
+  color: #2D8BCF;
+  font-family: Lato, 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+}
+
+h1{
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  font-weight: 700;
+    font-family: Lato,appleLogo,sans-serif;
+    margin: 0 0 1rem;
+}
+
+a.small {
+  line-height: 100%;
+  font-size: .9rem;
+}
+
+/* Form Styles */
+
+input {
+  width: 100%;
+  display: inline-block;
+  font-weight: 100;
+  padding: 15px;
+  margin: 5px 0;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #475B62;
+  border: 1px solid #C5C5C5;
+  border-radius: 4px;
+  outline: 0;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    font-size: 400;
+    line-height: 140%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #C61C6F;
+    color: white;
+    background-color: #2D8BCF;
+    background-size: 18px 18px;
+    min-width: 28px;
+    min-height: 28px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+         -o-user-select: none;
+            user-select: none;
+}
+
+.btn:hover { background-color: #DC322F; }
+
+/*buttons*/
+
+fieldset {
+  margin: 10px 0;
+}
+
+.textintro h1 {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+
+input.ng-invalid.ng-touched {
+  border: 1px solid #DA3637;
+}
+
+input.ng-valid.ng-touched {
+  border: 1px solid green;
+}
+
+form.ng-invalid .btn {
+  background: gray;   
+}
+
+.error {
+  color: darkred;
+  padding-bottom: 10px;
+}
+
